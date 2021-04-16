@@ -3,6 +3,8 @@ const express = require('express');
 const morgan = require('morgan');
 const handlebars  = require('express-handlebars');
 const app = express();
+//static files
+app.use(express.static(path.join(__dirname, 'resources/public')));
 // HTTP logger
 app.use(morgan('combined'));
 //template engine
