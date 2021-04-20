@@ -5,17 +5,20 @@
   "main": "src/index.js",
   "scripts": {
     "start": "nodemon --inspect src/index",
-    "watch": "node-sass src/resources/sass/app.scss -o src/resources/public/css/app.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "ngo thai",
   "license": "ISC",
   "devDependencies": {
     "express": "^4.17.1",
+    "husky": "^6.0.0",
+    "lint-staged": "^10.5.4",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1"
   },
   "dependencies": {
-    "express-handlebars": "^5.3.0"
+    "express-handlebars": "^5.3.0",
+    "mongoose": "^5.12.5"
   }
 }

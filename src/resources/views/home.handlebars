@@ -1,1 +1,5 @@
-<h3>This is message from home.handlebar ccc</h3>
+<ul class="posts_list mt-4">
+  {{#each dataPosts}}
+    <li>{{this.name}}: {{this.content}}</li>
+  {{/each}}
+</ul>
